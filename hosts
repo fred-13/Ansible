@@ -1,0 +1,21 @@
+[all]
+prometheus      ansible_host=192.168.122.19  ansible_user=root ip=192.168.122.19
+node-exporter-1 ansible_host=192.168.122.20  ansible_user=root ip=192.168.122.20
+node-exporter-2 ansible_host=192.168.122.21  ansible_user=root ip=192.168.122.21
+grafana		    ansible_host=192.168.122.22  ansible_user=root ip=192.168.122.22
+
+[prometheus-server]
+prometheus
+
+[node-exporters]
+node-exporter-1
+node-exporter-2
+
+[alertmanager-node]
+prometheus
+
+[grafana-server]
+grafana
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python
