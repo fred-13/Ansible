@@ -164,7 +164,7 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<p><img src="https://www.circonus.com/wp-content/uploads/2015/03/sol-icon-itOps.png" alt="graph logo" title="graph" align="right" height="60" /></p>
+<p><img src="https://cdn.worldvectorlogo.com/logos/prometheus.svg" alt="graph logo" title="graph" align="right" height="60" /></p>
 
 # Ansible Role: node exporter
 
@@ -205,7 +205,7 @@ Use it in a playbook as follows:
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<p><img src="https://grafana.com/blog/assets/img/blog/timeshift/grafana_release_icon.png" alt="grafana logo" title="grafana" align="right" height="60" /></p>
+<p><img src="https://github.com/grafana/grafana/blob/master/public/img/grafana_icon.svg" alt="grafana logo" title="grafana" align="right" height="60" /></p>
 
 # Ansible Role: grafana
 
