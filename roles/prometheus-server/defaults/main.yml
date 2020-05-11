@@ -36,15 +36,15 @@ prometheus_global:
   scrape_timeout: 10s
   evaluation_interval: 15s
 
-prometheus_remote_write: []
-# prometheus_remote_write:
-#   - url: https://dev.kausal.co/prom/push
+# prometheus_remote_write: []
+prometheus_remote_write:
+  - url: http://192.168.122.23:8086/api/v1/prom/write?u=admin&p=Test123&db=opentsdb
 #     basic_auth:
 #       password: FOO
 
-prometheus_remote_read: []
-# prometheus_remote_read:
-#   - url: https://demo.cloudalchemy.org:9201/read
+# prometheus_remote_read: []
+prometheus_remote_read:
+  - url: http://192.168.122.23:8086/api/v1/prom/read?u=admin&p=Test123&db=opentsdb
 #     basic_auth:
 #       password: FOO
 
