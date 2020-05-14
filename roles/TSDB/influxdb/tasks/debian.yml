@@ -1,0 +1,22 @@
+- name: Import package download url
+  include_vars:
+    file: vars/debian.yml
+    name: source
+
+- name: Install utility packages
+  apt:
+    name:
+      - net-tools
+      - python3-setuptools
+      - python3-apt
+      - python3-pip
+      - xz-utils
+    state: present
+    update_cache: yes
+
+- name: Install influxdb
+  apt:
+    deb: "{{ influxdb_url }}"
+    state: present
+  notify:
+    - influxdb started

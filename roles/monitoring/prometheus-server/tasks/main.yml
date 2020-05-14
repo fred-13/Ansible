@@ -1,4 +1,9 @@
 ---
+
+- include: firewall.yml
+  become: true
+  when: ansible_os_family == 'RedHat'
+
 - name: Gather variables for each operating system
   include_vars: "{{ item }}"
   with_first_found:

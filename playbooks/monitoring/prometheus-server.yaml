@@ -1,4 +1,4 @@
 ---
 - hosts: prometheus-server
   roles:
-  - roles/prometheus-server
+  - roles/monitoring/prometheus-server

@@ -1,4 +1,4 @@
 ---
 - hosts: prometheus-server
   roles:
-  - roles/alertmanager
+  - roles/monitoring/alertmanager

@@ -1,0 +1,4 @@
+---
+- hosts: tsdb
+  roles:
+  - roles/TSDB/influxdb

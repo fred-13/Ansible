@@ -1,4 +1,9 @@
 ---
+
+- include: firewall.yml
+  become: true
+  when: ansible_os_family == 'RedHat'
+
 - import_tasks: preflight.yml
   tags:
     - node_exporter_install

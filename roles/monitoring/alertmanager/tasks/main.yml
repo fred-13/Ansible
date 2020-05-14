@@ -1,4 +1,9 @@
 ---
+
+- include: firewall.yml
+  become: true
+  when: ansible_os_family == 'RedHat'
+
 - include: preflight.yml
   tags:
     - alertmanager_install

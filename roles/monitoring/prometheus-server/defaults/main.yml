@@ -38,13 +38,13 @@ prometheus_global:
 
 # prometheus_remote_write: []
 prometheus_remote_write:
-  - url: http://192.168.122.23:8086/api/v1/prom/write?u=admin&p=Test123&db=opentsdb
+  - url: http://{{ hostvars['influxdb']['ip'] }}:8086/api/v1/prom/write?u={{ influxdb_admin_user_name }}&p={{ influxdb_admin_user_password }}&db=opentsdb
 #     basic_auth:
 #       password: FOO
 
 # prometheus_remote_read: []
 prometheus_remote_read:
-  - url: http://192.168.122.23:8086/api/v1/prom/read?u=admin&p=Test123&db=opentsdb
+  - url: http://{{ hostvars['influxdb']['ip'] }}:8086/api/v1/prom/read?u={{ influxdb_admin_user_name }}&p={{ influxdb_admin_user_password }}&db=opentsdb
 #     basic_auth:
 #       password: FOO
 

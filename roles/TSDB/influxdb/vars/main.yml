@@ -1,0 +1,3 @@
+---
+influxdb_url: "{{ source.influxdb_url }}"
+influxdb_admin_user_password: "Test123"
