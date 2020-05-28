@@ -1,0 +1,14 @@
+---
+- name: Install selinux python packages [RHEL]
+  package:
+    name:
+      - "libselinux-python"
+      - "policycoreutils-python"
+    state: present
+  register: _install_selinux_packages
+  until: _install_selinux_packages is success
+  retries: 5
+  delay: 2
+  when:
+    - (ansible_distribution | lower == "redhat") or
+      (ansible_distribution | lower == "centos")

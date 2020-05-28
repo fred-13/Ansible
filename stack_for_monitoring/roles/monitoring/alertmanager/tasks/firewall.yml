@@ -1,0 +1,16 @@
+---
+- name: Configure FireWall | Open port alertmanager
+  firewalld:
+    port: "{{ item }}"
+    permanent: true
+    state: enabled
+  loop:
+    - 9093/tcp
+    - 6783/tcp
+  register: change_rules
+
+- name: Configure FireWall | Restart firewalld
+  systemd:
+    name: firewalld
+    state: reloaded
+  when: change_rules.changed

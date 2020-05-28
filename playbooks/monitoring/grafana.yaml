@@ -1,4 +1,0 @@
----
-- hosts: grafana-server
-  roles:
-  - roles/monitoring/grafana

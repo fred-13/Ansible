@@ -1,9 +1,9 @@
 [all]
-prometheus      ansible_host=192.168.122.19  ansible_user=root ip=192.168.122.19
-node-exporter-1 ansible_host=192.168.122.20  ansible_user=root ip=192.168.122.20
-node-exporter-2 ansible_host=192.168.122.21  ansible_user=root ip=192.168.122.21
-grafana		    ansible_host=192.168.122.22  ansible_user=root ip=192.168.122.22
-influxdb        ansible_host=192.168.122.23  ansible_user=root ip=192.168.122.23
+prometheus      ansible_host=192.168.123.9   ansible_user=fred ip=192.168.123.9
+node-exporter-1 ansible_host=192.168.123.10  ansible_user=fred ip=192.168.123.10
+node-exporter-2 ansible_host=192.168.123.11  ansible_user=fred ip=192.168.123.11
+grafana		    ansible_host=192.168.123.22  ansible_user=fred ip=192.168.123.22
+influxdb        ansible_host=192.168.123.23  ansible_user=fred ip=192.168.123.23
 
 [prometheus-server]
 prometheus

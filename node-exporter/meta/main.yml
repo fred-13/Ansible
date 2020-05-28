@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: Alfred Meshceryakov
+  description: Prometheus Node Exporter
+  license: MIT
+  company: none
+  min_ansible_version: 2.7
+  platforms:
+    - name: EL
+      versions:
+        - 7
+  galaxy_tags:
+    - monitoring
+    - prometheus
+    - exporter
+    - metrics
+    - system
+
+dependencies: []
